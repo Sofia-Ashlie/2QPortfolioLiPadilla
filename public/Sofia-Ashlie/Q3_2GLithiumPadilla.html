@@ -1,37 +1,59 @@
-<form>
+<!DOCTYPE html>
+<html>
+    <body>
+        <form method="post" action="submit" onsubmit="Confirm()">
 
-    <label for="StudentID">Student ID:</label><br>
-    <input type="number" id="StudentID" name="StudentID"><br>
-    
-    <label for="FullName">Full Name:</label><br>
-    <input type="text" id="FullName" name="FullName"><br>
-
-    <label for="Birthday">Birthday:</label><br>
-    <input type="date" id="Birthday" name="Birthday"><br>
-
-    <label for="Email address">Email address:</label><br>
-    <input type="email" id="Email address" name="Email address"><br>
-
-    <label for="Mobile phone">Mobile phone:</label><br>
-    <input type="text" id="Mobile phone" name="Mobile phone"><br>
-
-    <label for="Grade Level">Grade Level:</label><br>
-    <input type="" id="Grade Level" name="Grade Level"><br>
-
-    <label for="Intern / Extern">Intern / Extern:</label><br>
-    <input type="radio" id="Intern / Extern" name="Intern / Extern"><br>
-
-    <label for="Club">Preferred Organization / Club:</label><br>
-    <select>
-        <option value="club1">Likha</option>
-        <option value="club2" selected>Volant</option>
-        <option value="club3">Invictus</option>
-        <option value="club4">Atom</option>
-        <option value="club4">AstroSoc</option>
-    </select><br>
-    <label for="Why Join">Why do you want to join?</label><br>
-    <textarea id="Why Join" name="Why Join"></textarea><br><br>
-
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
-</form>
+            <label for="StudentID">Student ID:</label><br>
+            <input type="number" id="StudentID" name="StudentID"><br>
+            
+            <label for="FullName">Full Name:</label><br>
+            <input type="text" id="FullName" name="FullName"><br>
+        
+            <label for="Birthday">Birthday:</label><br>
+            <input type="date" id="Birthday" name="Birthday"><br>
+        
+            <label for="Email address">Email address:</label><br>
+            <input type="email" id="Email address" name="Email address"><br>
+        
+            <label for="Mobile phone">Mobile phone:</label><br>
+            <input type="text" id="Mobile phone" name="Mobile phone"><br>
+        
+            <label for="Grade Level">Grade Level:</label><br>
+            <select>
+                <option value="grade1">7</option>
+                <option value="grade2" selected>8</option>
+                <option value="grade3">9</option>
+                <option value="grade4">10</option>
+                <option value="grade5">11</option>
+                <option value="grade6">12</option>
+            </select><br>
+        
+            <label for="Intern / Extern">Intern / Extern:</label><br>
+            <input type="radio" id="Intern" name="Intern / Extern">
+            <label for="1">Intern</label>
+            <input type="radio" id="Extern" name="Intern / Extern">
+            <label for="2">Extern</label> <br>
+        
+            <label for="Club">Preferred Organization / Club:</label><br>
+            <select>
+                <option value="club1" name="Club">Likha</option>
+                <option value="club2" name="Club">Volant</option>
+                <option value="club3" name="Club">Invictus</option>
+                <option value="club4" name="Club">Atom</option>
+                <option value="club4" name="Club">AstroSoc</option>
+            </select><br>
+        
+            <label for="Why Join">Why do you want to join?</label><br>
+            <textarea id="Why Join" name="Why Join"></textarea><br><br>
+        
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+        
+        <script>
+            function Confirm(){
+                alert("You have submitted. Proceed.")
+            }
+        </script>
+    </body>
+</html>
